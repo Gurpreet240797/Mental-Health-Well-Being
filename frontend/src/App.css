@@ -1,0 +1,25 @@
+
+.App {
+  height: auto;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header"
+    "sidebarleft main sidebarright"
+    "footer footer footer";
+}
+
+.HeaderContent {
+  grid-area: header;
+}
+.PageContent {
+  grid-area: main;
+  margin: 5%;
+}
+.SidebarContent {
+  grid-area: sidebarleft;
+}
+.FooterContent {
+  grid-area: footer;
+}
